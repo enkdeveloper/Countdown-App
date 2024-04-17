@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #c7c7c7; 
+}
+
+.navbar {
+    color: #ffffff;
+    padding: 35px;
+    background-image: url('./img/nav.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: static;
+    width: 100%;
+    height: auto; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 48px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #FFF7F1 !important;
+    padding-left: 30px;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.countdown-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.date-picker {
+    margin-bottom: 20px;
+}
+
+.date-picker-label {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #2C3E50;
+}
+
+.date-picker-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.calculate-btn {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 20px;
+    background-color: #777576;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.refresh-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000000;
+}
+
+
+.calculate-btn:hover {
+    background-color: #585657;
+}
+
+.group-date {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-picker-difference {
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.difference-dates {
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.countdown-display {
+    margin-bottom: 20px;
+}
+
+#importantDates {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2C3E50;
+}
+
+.countdown-timer {
+    font-size: 18px;
+    color: #2C3E50;
+}
+
+.countdown-time {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.date-difference-result {
+    font-size: 18px;
+    color: #2C3E50;
+}
+
+.important-dates-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.event {
+    background-color: #F2F2F2;  
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+    width: calc(30%); 
+    height: 220px;
+    box-sizing: border-box;
+}
+
+.event p {
+    padding: 10px;
+    font-size: large;
+}
+
+.event h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#hourglassIcon {
+    animation: rotate 10s linear infinite;  
+    margin-right: 10px;
+}
+
+.footer { 
+    color: #FFF7F1; 
+    padding: 30px 0; 
+    text-align: center;
+    background-image: url('./img/nav.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    position: static;
+    width: 100%;
+    height: auto; 
+    margin-top: 20px; 
+    font-size: 24px;
+}
+
+.footer a{
+    color: #FFF7F1 !important;
+    text-decoration: none;
+}
+
+.footer span:hover {
+    color: #898889; 
+    text-decoration: none;
+    font-size: 28px;
+}
+
+.icon-container {
+    display: inline-block;
+    margin-right: 10px; 
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.fab.fa-tiktok {
+    font-size: 24px; 
+}
+
+.fab.fa-pinterest {
+    font-size: 24px; 
+}
+
+.fab.fa-etsy {
+    font-size: 24px; 
+}
+
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 32px;
+    }
+
+    .date-picker-input {
+        font-size: 12px;
+    }
+
+    .calculate-btn, .refresh-btn {
+        padding: 3px 8px;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .group-date {
+        flex-direction: column;
+    }
+
+    .date-picker-difference {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .event {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+}
